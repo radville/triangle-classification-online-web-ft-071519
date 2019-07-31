@@ -11,7 +11,7 @@ class Triangle
   end
   
   def kind
-    if @one <= 0 || @two <= 0 || @three <= 0
+    if @one <= 0 || @two <= 0 || @three <= 0 || @one + @two <= @three
       # binding.pry
       # begin
         raise TriangleError
