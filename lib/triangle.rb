@@ -1,5 +1,7 @@
 class Triangle
 
+  # attr_accessor
+
   def initialize(one, two, three)
     @one = o
   end
