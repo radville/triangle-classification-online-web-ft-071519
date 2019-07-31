@@ -13,10 +13,10 @@ class Triangle
   def kind
     if @one == 0 || @two == 0 || @three == 0
       # binding.pry
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-          puts error.message
+      # begin
+      #   raise TriangleError
+      # rescue TriangleError => error
+      #     puts error.message
       end
     else
       if @one == @two && @two == @three 
@@ -30,9 +30,9 @@ class Triangle
   end
 
   class TriangleError < StandardError
-    def message 
-      "error"
-    end
+    # def message 
+    #   "error"
+    # end
   end
 
 
