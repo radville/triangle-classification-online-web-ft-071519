@@ -23,12 +23,13 @@ class Triangle
       elsif @one != @two && @two != @three && @one != @three
         :scalene
       end
+    end
   end
 
   class TriangleError < StandardError
-    # def message 
-    #   # triangle error code
-    # end
+    def message 
+      # triangle error code
+    end
   end
 
 
