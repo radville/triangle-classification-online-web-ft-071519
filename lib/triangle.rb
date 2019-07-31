@@ -10,7 +10,7 @@ class Triangle
   
   def kind
     if @one == @two && @two == @three 
-      "equilateral"
+      :equilateral
     end
   end
 
