@@ -12,11 +12,7 @@ class Triangle
   
   def kind
     if @one <= 0 || @two <= 0 || @three <= 0 || @one + @two <= @three|| @one + @three <= @two|| @two + @three <= @one
-      begin
-        raise TriangleError
-      rescue TriangleError
-          puts TriangleError.message
-      end
+      raise TriangleError
     else
       if @one == @two && @two == @three 
         :equilateral
