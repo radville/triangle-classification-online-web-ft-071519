@@ -14,7 +14,7 @@ class Triangle
     if @one == 0 || @two == 0 || @three == 0
       # binding.pry
       # begin
-      #   raise TriangleError
+        raise TriangleError
       # rescue TriangleError => error
       #     puts error.message
       end
