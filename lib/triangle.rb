@@ -3,13 +3,13 @@ class Triangle
   def initialize(one, two, three)
     @one = o
     
-    def kind
+    # def kind
       
-    end
+    # end
 
-  class TriangleError < StandardError
-    # triangle error code
-  end
+  # class TriangleError < StandardError
+  #   # triangle error code
+  # end
 
 
 end
