@@ -9,13 +9,20 @@ class Triangle
   end
   
   def kind
-    if @one == @two && @two == @three 
-      :equilateral
-    elsif @one == @two|| @two == @three || @one == @three
-      :isosceles
-    elsif @one != @two && @two != @three && @one != @three
-      :scalene
-    end
+    if @one == 0 || @two == 0 || @three == 0
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+          puts error.message
+      end
+    else
+      if @one == @two && @two == @three 
+        :equilateral
+      elsif @one == @two|| @two == @three || @one == @three
+        :isosceles
+      elsif @one != @two && @two != @three && @one != @three
+        :scalene
+      end
   end
 
   class TriangleError < StandardError
