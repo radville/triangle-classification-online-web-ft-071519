@@ -1,3 +1,5 @@
+require "pry"
+
 class Triangle
 
   attr_accessor :one, :two, :three
@@ -10,6 +12,7 @@ class Triangle
   
   def kind
     if @one == 0 || @two == 0 || @three == 0
+      binding.pry
       begin
         raise TriangleError
       rescue TriangleError => error
