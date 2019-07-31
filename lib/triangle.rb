@@ -8,9 +8,11 @@ class Triangle
     @three = three
   end
   
-    def kind
-      
+  def kind
+    if @one == @two == @three 
+      "equilateral"
     end
+  end
 
   # class TriangleError < StandardError
   #   # triangle error code
