@@ -1,13 +1,16 @@
 class Triangle
 
-  # attr_accessor
+  attr_accessor :one, :two, :three
 
   def initialize(one, two, three)
-    @one = o
+    @one = one
+    @two = two
+    @three = three
   end
-    # def kind
+  
+    def kind
       
-    # end
+    end
 
   # class TriangleError < StandardError
   #   # triangle error code
