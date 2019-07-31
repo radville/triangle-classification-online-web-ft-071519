@@ -12,7 +12,7 @@ class Triangle
   
   def kind
     if @one == 0 || @two == 0 || @three == 0
-      binding.pry
+      # binding.pry
       begin
         raise TriangleError
       rescue TriangleError => error
